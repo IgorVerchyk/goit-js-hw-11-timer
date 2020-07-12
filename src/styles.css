@@ -9,12 +9,68 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-
-  /*
-   * CSS image reference example.
-   */
-  background-image: url('./images/bg-pattern.png');
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.button__panel {
+  position: absolute;
+  display: flex;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.actions__button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.actions__button:last-child {
+  margin-right: 0;
+}
+.timer {
+  position: absolute;
+  display: flex;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.field {
+  display: inline-block;
+  width: 80px;
+  margin-right: 90px;
+}
+.field:last-child {
+  margin-right: 0;
+}
+.value {
+  display: inline-block;
+  margin: 0;
+  font-size: 60px;
+  margin-top: 20px;
+  color: aliceblue;
+  background-color: cornflowerblue;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: darkblue;
+}
+.label {
+  margin: 0;
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.contStart {
+  background-color: green;
+}
+.contStop {
+  background-color: red;
+}
+.contClear {
+  background-color: yellow;
 }
